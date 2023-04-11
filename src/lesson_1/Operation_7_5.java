@@ -11,7 +11,7 @@ public class Operation_7_5 {
         int days1 = 366;
         int dayse = 365;
 
-        if ( (years % 400 == 0) || (years % 4 == 0) && (years % 100 != 0)) {
+        if ((years % 400 == 0) || (years % 4 == 0) && (years % 100 != 0)) {
             System.out.println("количество дней в году: 366");
         } else {
             System.out.println("количество дней в году: 365");
