@@ -25,12 +25,20 @@ public class Massiv {
 
         Scanner sc = new Scanner(System.in);
         int array[] = new int[10];
-        int max = array[0];
-        System.out.println("Введите 10 чисел: " + max);
+        System.out.println("Введите 10 чисел: ");
 
         for (int i = 0; i < 10; i++) {
             array[i] = sc.nextInt();
         }
+
+        int max = array[0];
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max)
+
+                max = array[i];
+        }
+        System.out.println("Максимальное число: " + max);
 
         //
     }
