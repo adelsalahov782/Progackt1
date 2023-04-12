@@ -76,6 +76,7 @@ public class Massiv {
         }
         System.out.println("-------------");
         System.out.println("Exp.5.");
+
         // exp.5.
 
 //        Scanner scanner = new Scanner(System.in);
