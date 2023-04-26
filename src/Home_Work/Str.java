@@ -30,7 +30,7 @@ public class Str {
         System.out.println("-------");
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите 5 стирок:");
+        System.out.println("Введите 5 строк:");
         String[] input = new String[5];
         String minLine = new String();
         String maxLine = new String();
@@ -45,8 +45,8 @@ public class Str {
                 maxLine = input[j];}
         }
 
-        System.out.println("Строка с максимальной длиной - " + maxLine +  " - длина - " + maxLine.length());
-        System.out.println("Строка с минимальной длиной - " + minLine +  " - длина - " + minLine.length());
+        System.out.println("Максимальная строка - " + maxLine +  " - длина - " + maxLine.length());
+        System.out.println("Минимальная строка  - " + minLine +  " - длина - " + minLine.length());
 
         System.out.println("--------");
         System.out.println("Exp.3.");
@@ -86,7 +86,7 @@ public class Str {
         for (int v = 0; v < strings.length; v++) {
             strings[v] = scanner.nextLine();
         }
-        for (int v = 0; v < strings.length; v++) {
+        for (int v = strings.length - 1; v >= 0; v--) {
             for (int l = 0; l < strings.length; l++) {
                 if (v != l && strings[v] != null) {
                     if (strings[v].equals(strings[l])) {
