@@ -34,16 +34,21 @@ public class Str {
         String[] input = new String[5];
         String minLine = new String();
         String maxLine = new String();
+
         for (int i = 0; i < input.length; i++) {
             input[i] = scan.nextLine();
+            if (maxLine.length() < input[i].length()) {
+                maxLine = input[i];
+            }
+
         }
+        minLine = input[0];
         for (int j = 1; j < input.length; j++) {
-            if (minLine.length() <= maxLine.length()) {
+            if (minLine.length() > input[j].length()) {
                 minLine = input[j];
             }
-            else {
-                maxLine = input[j];}
         }
+
 
         System.out.println("Максимальная строка - " + maxLine +  " - длина - " + maxLine.length());
         System.out.println("Минимальная строка  - " + minLine +  " - длина - " + minLine.length());
@@ -102,3 +107,4 @@ public class Str {
 
     }
 }
+
