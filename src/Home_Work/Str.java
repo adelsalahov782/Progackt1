@@ -32,24 +32,19 @@ public class Str {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите 5 строк:");
         String[] input = new String[5];
-        String minLine = new String();
-        String maxLine = new String();
-
         for (int i = 0; i < input.length; i++) {
             input[i] = scan.nextLine();
-            if (maxLine.length() < input[i].length()) {
-                maxLine = input[i];
-            }
-
         }
-        minLine = input[0];
+        String minLine = input[0];
+        String maxLine = input[0];
         for (int j = 1; j < input.length; j++) {
             if (minLine.length() > input[j].length()) {
                 minLine = input[j];
             }
+            if (maxLine.length() < input[j].length()) {
+                maxLine = input[j];
+            }
         }
-
-
         System.out.println("Максимальная строка - " + maxLine +  " - длина - " + maxLine.length());
         System.out.println("Минимальная строка  - " + minLine +  " - длина - " + minLine.length());
 
